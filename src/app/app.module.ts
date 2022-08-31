@@ -1,16 +1,13 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppComponent } from './app.component';
+import { FindingFalconeAppComponent } from './finding-falcone.app.component';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+  // This makes available no. of core angular services and directives available to angular app
+  imports: [BrowserModule],
+  // Add a component, directive and pipe
+  declarations: [FindingFalconeAppComponent],
+  bootstrap: [FindingFalconeAppComponent],
 })
-export class AppModule { }
+export class AppModule {}
